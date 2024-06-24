@@ -7,9 +7,23 @@
             border: 1px solid black;
         }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <div class="container">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="player-info">
+            <span id="player1Info">Player 1 cards: </span><br>
+            <span id="player2Info">Player 2 cards: </span>
+        </div>
+        <div id="winner" class="winner"></div>
+        <div class="game-log" id="gameLog">
+            <!-- Game log will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- <canvas id="gameCanvas" width="800" height="600"></canvas> -->
     <!-- <button onclick="flipCard()" >Flip Cards</button> -->
     <script src="warGame.js"></script>
 </body>
